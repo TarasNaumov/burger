@@ -1,0 +1,42 @@
+footer
+    background-color: #222
+.footer
+    padding: 100px 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    gap: 50px
+    +media(1440px)
+        height: 100vh
+        text-align: left
+        justify-content: space-between
+        flex-direction: row
+    .title
+        font-size: 31px
+        color: #fff
+        font-weight: 700
+        font-family: "Archivo"
+        margin-bottom: 38px
+    ul
+        list-style: none
+        a
+            font-size: 24px
+            line-height: 42px
+            text-decoration: none
+            color: #fff
+            font-family: "Nunito"
+    .info_container
+        +media(1440px)
+            width: 35%
+        .info
+            font-size: 24px
+            color: #fff
+            font-family: "Nunito"
+            +media(425px)
+                width: 80%
+                margin: auto
+            +media(768px)
+                width: 60%
+            +media(1024px)
+                width: unset

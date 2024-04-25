@@ -1,0 +1,91 @@
+doctype html
+html(lang="uk")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/styles.css")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        title ЗМІНИ ЦЕ!!!
+    body 
+        include helpers/vars.pug
+        include helpers/mixins.pug
+
+        include components/header.pug
+
+        main 
+            section.our_shef
+                h2.section_name Our Chef
+                p.title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+                .card_container.animate
+                    +card("img/aiden.png", "Founder", "Aiden Hunter")
+                    +card("img/ethel.png", "Co-Founder", "Ethel Ramsey")
+                    +card("img/fannie.png", "Co-Founder", "Fannie Stewart")
+            section.section_best_burger#promo
+                .wrapper.best_burger.animate
+                    div
+                        img(src="img/burger.png", alt="")
+                    div.info
+                        h2.section_name Best Burger
+                        p.title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+                        a(href="#") Order Now
+            section.big_burger_section
+                .wrapper.big_burger.animate
+                    div.info
+                        h2.section_name Big Burger
+                        p.title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+                        a(href="#") Order Now
+                    div
+                        img(src="img/big_burger.png")
+            section.statistics_section#about
+                h2.section_name Statistics
+                p.title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+                .wrapper.statistics.animate
+                    div 
+                        p
+                            span 7k
+                            <br>Customer
+                    div 
+                        p
+                            span 109
+                            <br>Outlets
+                    div 
+                        p
+                            span 35
+                            <br>Country
+            section.package_section
+                h2.section_name#product Popular Package
+                .wrapper.package.animate
+                    div.card_product
+                        p.card_name Package I
+                        img(src="img/burger_icon.png")
+                        p.price $10.00
+                        p.info Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        a(href="#") order now
+                    div.card_product
+                        p.card_name Package II
+                        img(src="img/burger_icon.png")
+                        p.price $20.00
+                        p.info Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        a(href="#") order now
+                    div.card_product
+                        p.card_name Package III
+                        img(src="img/burger_icon.png")
+                        p.price $30.00
+                        p.info Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        a(href="#") order now
+            section.coment_section
+                .wrapper.coment
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+                    h2 Barry Henderson
+            section.update_section
+                .update
+                    p.section_name Don’t miss Our Update
+                    p.title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+                    form(action="main.php", method="post") 
+                        input(type="email", name="email", placeholder="Your Email")
+                        button(type="submit") Subscribe
+        include components/footer.pug
+        script(src="js/scripts.js") 

@@ -1,0 +1,426 @@
+@import helpers/vars
+@import helpers/mixins
+
+.our_shef
+    padding: 95px 0 145px
+    background: url(../img/our_shef_bg.jpg)
+    background-position: center bottom
+    .section_name
+        font-size: 64px
+        color: #f64b3c
+        font-weight: 700
+        font-family: "Archivo"
+        margin-bottom: 20px
+        text-align: center
+    .title
+        width: 100%
+        font-size: 15px
+        color: #f64b3c
+        font-weight: 400
+        font-family: "Montserrat"
+        text-align: center
+        margin: auto
+        margin-bottom: 40px
+        +media(768px)
+            width: 70%
+            font-size: 20px
+        +media(1440px)
+            width: 50%
+            font-size: 25px
+            margin-bottom: 67px
+    
+.card_container
+    display: flex
+    flex-direction: column
+    gap: 50px
+    +media(1024px)
+        flex-direction: row
+        justify-content: space-between  
+        gap: unset
+    .card
+        text-align: center
+        width: 100%
+        img
+            border-radius: 50%
+            margin-bottom: 20px
+        h2
+            font-size: 33px
+            line-height: 33px   
+            text-transform: uppercase
+            color: #f64b3c
+            font-weight: 700
+            font-family: "Archivo"
+            margin-bottom: 20px
+        p
+            font-size: 25px
+            color: #f64b3c
+            font-weight: 600
+            font-family: "Nunito"
+
+.animate
+    opacity: 0
+    transform: translateY(50px)
+    transition: 3s
+
+.animate.visible
+    opacity: 1
+    transform: translateY(0px)
+
+.section_best_burger
+    height: 100vh
+    background-color: #f64b3c
+    display: flex
+    align-items: center
+    .best_burger
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .info
+            width: 100%
+            +media(1024px)
+                width: 50%
+        img
+            display: none
+            border-radius: 50%
+            +media(1024px)
+                display: block
+        .section_name
+            font-size: 37px
+            line-height: 40px
+            color: #fff
+            font-weight: 700
+            font-family: "Archivo"
+            margin-bottom: 20px
+            +media(768px)
+                font-size: 50px
+                margin-bottom: 45px
+            +media(1024px)
+                font-size: 75px
+        .title
+            font-size: 15px
+            color: #fff
+            font-family: "Nunito"
+            margin-bottom: 20px
+            +media(768px)
+                font-size: 25px
+                margin-bottom: 57px
+            +media(1024px)
+                font-size: 30px
+                margin-bottom: 73px
+        a
+            display: inline-block
+            text-decoration: none
+            padding: 10px 30px
+            border-radius: 32px
+            background-color: #fff
+            border: 4px solid #fff
+            font-size: 15px
+            text-transform: uppercase
+            color: #f64b3c
+            font-weight: 400
+            transition: 0.3s
+            font-family: "Nunito"
+            text-align: center
+            &:hover
+                background-color: transparent
+                color: #fff
+            +media(768px)
+                font-size: 30px
+                padding: 20px 75px
+
+.big_burger_section
+    height: 100vh
+    background: url("../img/our_shef_bg.jpg")
+    display: flex
+    align-items: center
+    .big_burger
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .info
+            width: 100%
+            +media(1024px)
+                width: 50%
+        img
+            display: none
+            border-radius: 50%
+            +media(1024px)
+                display: block
+        .section_name
+            font-size: 37px
+            line-height: 40px
+            color: #f64b3c
+            font-weight: 700
+            font-family: "Archivo"
+            margin-bottom: 20px
+            +media(768px)
+                font-size: 50px
+                margin-bottom: 45px
+            +media(1024px)
+                font-size: 75px
+        .title
+            font-size: 15px
+            color: #f64b3c
+            font-family: "Nunito"
+            margin-bottom: 20px
+            +media(768px)
+                font-size: 25px
+                margin-bottom: 57px
+            +media(1024px)
+                font-size: 30px
+                margin-bottom: 73px
+        a
+            display: inline-block
+            text-decoration: none
+            padding: 10px 30px
+            border-radius: 32px
+            background-color: #f64b3c
+            border: 4px solid #f64b3c
+            font-size: 15px
+            text-transform: uppercase
+            color: #fff
+            font-weight: 400
+            transition: 0.3s
+            font-family: "Nunito"
+            text-align: center
+            &:hover
+                background-color: transparent
+                color: #f64b3c
+            +media(768px)
+                font-size: 30px
+                padding: 20px 75px
+
+.statistics_section
+    padding: 95px 0 145px
+    text-align: center
+    background-color: #f64b3c
+    +media(1024px)
+        height: 100vh
+    .section_name
+        font-size: 62px
+        color: #fff
+        font-weight: 700
+        font-family: "Archivo"
+        margin-bottom: 20px
+    .title
+        font-size: 15px
+        color: #fff
+        font-family: "Montserrat"
+        margin: auto
+        margin-bottom: 65px
+        +media(768px)
+            width: 70%
+            font-size: 20px
+        +media(1440px)
+            width: 50%
+            font-size: 25px
+            margin-bottom: 67px
+    .statistics
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 50px
+        +media(1024px)
+            flex-direction: row
+            justify-content: space-between  
+            gap: unset
+        div
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 310px
+            height: 310px
+            border-radius: 50%
+            border: 5px solid #fff
+            p
+                font-size: 33px
+                text-transform: uppercase
+                color: #fff
+                font-weight: 700
+                font-family: "Montserrat"
+                span
+                    font-size: 102px
+                    color: #ffffff
+                    font-weight: 700
+                    font-family: "Archivo"
+                    text-align: center
+
+.package_section
+    padding: 95px 0 145px
+    background: url(../img/our_shef_bg.jpg)
+    background-position: center bottom
+    .section_name
+        font-size: 64px
+        color: #f64b3c
+        font-weight: 700
+        font-family: "Archivo"
+        margin-bottom: 140px
+        text-align: center
+    .package
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 50px
+        +media(1024px)
+            flex-direction: row
+            justify-content: space-between  
+            gap: unset
+        .card_product
+            width: 100%
+            text-align: center
+            border-radius: 8px
+            padding: 34px 10px
+            background-color: #fff
+            +media(500px)
+                width: 60%
+            +media(1024px)
+                width: 310px
+                padding: 34px 25px
+            .card_name
+                font-size: 33px
+                text-transform: uppercase
+                color: #f64b3c
+                font-weight: 700
+                font-family: "Archivo"
+                margin-bottom: 40px
+            img
+                margin-bottom: 40px
+            .price
+                font-size: 33px
+                color: #f64b3c
+                font-weight: 700
+                font-family: "Archivo"
+                margin-bottom: 23px
+            .info
+                font-size: 20px
+                color: #f64b3c
+                font-family: "Montserrat"
+                margin-bottom: 27px
+            a
+                display: inline-block
+                width: 100%
+                padding: 15px
+                border-radius: 29px
+                background-color: #f64b3c
+                border: 3px solid #f64b3c
+                font-size: 23px
+                text-transform: uppercase
+                color: #fff
+                font-weight: 700
+                font-family: "Montserrat"
+                text-decoration: none
+                transition: 0.3s
+                &:hover
+                    background-color: transparent
+                    color: #f64b3c
+
+.coment_section
+    height: 100vh
+    background: url("../img/coments_bg.jpg") no-repeat
+    background-position: center center
+    background-size: cover
+    background-attachment: fixed
+    display: flex
+    align-items: center
+    .coment
+        display: flex
+        align-items: center
+        flex-direction: column
+        p
+            width: 100%
+            font-size: 36px
+            color: #fff
+            font-weight: 700
+            font-family: "Archivo"
+            margin-bottom: 80px
+            text-align: center
+            +media(1024px)
+                width: 70%
+        h2
+            font-size: 45px
+            color: #fff
+            font-family: "Calistoga"
+            text-align: center
+
+.update_section
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: url(../img/our_shef_bg.jpg)
+    text-align: center
+    height: 100vh
+    .section_name
+        font-size: 37px
+        line-height: 40px
+        color: #f64b3c
+        font-weight: 700
+        font-family: "Archivo"
+        margin-bottom: 20px
+        +media(768px)
+            font-size: 50px
+            line-height: 53px
+            margin-bottom: 45px
+        +media(1024px)
+            font-size: 75px
+            line-height: 78px
+    .title
+        font-size: 15px
+        color: #f64b3c
+        font-family: "Montserrat"
+        margin: auto
+        margin-bottom: 65px
+        +media(768px)
+            width: 70%
+            font-size: 20px
+        +media(1440px)
+            width: 50%
+            font-size: 25px
+            margin-bottom: 67px
+    form
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        gap: 20px
+        +media(768px)
+            flex-direction: unset
+            gap: unset
+    input
+        width: 90%
+        padding: 22px 0 22px 30px
+        border-radius: 30px
+        outline: none
+        border: none
+        background-color: #fff
+        &:placeholder
+            opacity: 0.502
+            font-size: 25px
+            color: #835e3f
+            font-family: "Nunito"
+        +media(768px)
+            width: 40%
+            border-radius: 30px 0 0 30px
+        +media(1440px)
+            width: 35%
+    button
+        padding: 8px 38px
+        background-color: #f64b3c
+        border-radius: 30px
+        border: 4px solid #f64b3c
+        transition: 0.3s
+        font-size: 25px
+        text-transform: uppercase
+        color: #fff
+        font-family: "Nunito"
+        text-align: center
+        &:hover
+            background: transparent
+            color: #f64b3c
+        +media(768px)
+            border-radius: 0 30px 30px 0
+    
+
+  
+@import  components/header
+@import  components/footer

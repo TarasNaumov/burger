@@ -1,0 +1,26 @@
+header
+    .wrapper-header
+        .header-line.flex
+            .logo
+                img(src="img/logo.png")
+
+            .menu
+                .mob-menu.flex(onclick="addActiveClass(this)")
+                    span.mob-menu-span1
+                    span.mob-menu-span2
+                    span.mob-menu-span3
+                ul
+                    li
+                        a(href="/") Home
+                    li
+                        a(href="#product") Product
+                    li
+                        a(href="#promo") Promo
+                    li
+                        a(href="#about") About
+                    li
+                        a(href="#") Contact
+        .header-title
+            h1 Get Cashback <br> up to 50%
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur justo eu nunc consequat.
+            a(href="#") order now

@@ -1,0 +1,1 @@
+function addActiveClass(e){e.classList.contains("active")?e.classList.remove("active"):e.classList.add("active")}const animatedElements=document.querySelectorAll(".animate");window.addEventListener("scroll",(function(){const e=window.pageYOffset,t=window.innerHeight;animatedElements.forEach((s=>{const i=s.offsetTop,n=i+s.offsetHeight;e+t>i&&e<n&&s.classList.add("visible")}))}));
